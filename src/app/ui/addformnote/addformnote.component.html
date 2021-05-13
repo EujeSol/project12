@@ -1,0 +1,26 @@
+<div class="container">
+    <form class="form-input">
+        <div class="raw">
+            <div class="col-8">
+                <h4>Добавить заметку</h4>
+            </div>
+        </div>
+        <p class="input-name">Название заметки:</p>
+        <input class="note-name-form"
+         type="text"
+          [(ngModel)]="title"
+          name="note name">
+
+        <div>
+            <textarea class="note-form" 
+            [(ngModel)]="text"
+             name="note" 
+             id="note"></textarea>
+        </div>
+
+        <button 
+        (click)="onAddNote()"
+        class="add-btn">Добавить</button>
+    </form>
+
+</div>
